@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hailemariam Adugnaw | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">HA<span>.</span></a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="hero-circle hero-circle--1"></div>
+      <div class="hero-circle hero-circle--2"></div>
+      <div class="hero-circle hero-circle--3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting">Hello, I'm</p>
+      <h1 class="hero-name">Hailemariam<br /><span>Adugnaw</span></h1>
+      <p class="hero-title">
+        <span class="typed-text" id="typed-text"></span>
+        <span class="cursor">|</span>
+      </p>
+      <p class="hero-desc">
+        A passionate Computer Science student at the University of Gondar, 
+        building solutions that make a difference.
+      </p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn--primary">View My Work</a>
+        <a href="#contact" class="btn btn--outline">Get In Touch</a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/HailemariamAdugnaw" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/hailemariam-adugnaw" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:hailemariamad@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+    <div class="hero-image-wrapper">
+      <div class="hero-avatar">
+        <div class="avatar-ring"></div>
+        <div class="avatar-initials">HA</div>
+        <div class="avatar-badge"><i class="fas fa-code"></i></div>
+      </div>
+    </div>
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <span></span>
+    </a>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Who I Am</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Student</h3>
+          <p>
+            Currently pursuing a Bachelor of Science in Computer Science at the 
+            <strong>University of Gondar</strong>, Ethiopia. I am deeply interested 
+            in software engineering, algorithms, and building real-world applications.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Developer</h3>
+          <p>
+            I enjoy turning ideas into reality through clean, efficient code. 
+            From front-end interfaces to back-end logic, I love working across 
+            the full stack and continuously expanding my skill set.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <div class="about-icon"><i class="fas fa-lightbulb"></i></div>
+          <h3>Problem Solver</h3>
+          <p>
+            I approach challenges analytically, breaking complex problems into 
+            manageable pieces. I believe technology can be a powerful tool for 
+            positive change in society.
+          </p>
+        </div>
+      </div>
+      <div class="about-stats reveal">
+        <div class="stat">
+          <span class="stat-number" data-target="10">0</span>
+          <span class="stat-label">Projects Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="5">0</span>
+          <span class="stat-label">Technologies Mastered</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="3">0</span>
+          <span class="stat-label">Years of Coding</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number" data-target="100">0</span>
+          <span class="stat-label">% Dedication</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I Know</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+      </div>
+      <div class="skills-grid">
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-code"></i> Languages</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Python</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="85"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">JavaScript</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="75"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Java</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">C/C++</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">SQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-globe"></i> Web Development</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">HTML &amp; CSS</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">React.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="70"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Node.js</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="65"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Bootstrap</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="80"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-tools"></i> Tools &amp; Platforms</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <span class="skill-name">Git &amp; GitHub</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="82"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">VS Code</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">Linux</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="68"></div></div>
+            </div>
+            <div class="skill-item">
+              <span class="skill-name">MySQL</span>
+              <div class="skill-bar"><div class="skill-fill" data-width="72"></div></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="skill-category reveal">
+          <h3><i class="fas fa-brain"></i> Core CS Concepts</h3>
+          <div class="tech-tags">
+            <span class="tag">Data Structures</span>
+            <span class="tag">Algorithms</span>
+            <span class="tag">OOP</span>
+            <span class="tag">Database Design</span>
+            <span class="tag">Operating Systems</span>
+            <span class="tag">Computer Networks</span>
+            <span class="tag">Software Engineering</span>
+            <span class="tag">Machine Learning</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">What I've Built</p>
+        <h2 class="section-title">My <span>Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" title="View Code" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Student Management System</h3>
+          <p class="project-desc">
+            A full-featured student management application for tracking grades, 
+            attendance, and academic performance, built with Python and MySQL.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>MySQL</span><span>Tkinter</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" title="View Code" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">E-Commerce Web App</h3>
+          <p class="project-desc">
+            A responsive online shopping platform with product browsing, cart management, 
+            and order processing functionalities.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" title="View Code" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Library Management System</h3>
+          <p class="project-desc">
+            A desktop application that manages library books, members, and borrowing 
+            records with automated fine calculation.
+          </p>
+          <div class="project-tags">
+            <span>Java</span><span>JavaFX</span><span>SQLite</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" title="View Code" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Weather Dashboard</h3>
+          <p class="project-desc">
+            A real-time weather application that fetches live data from an open API 
+            and displays current conditions and forecasts beautifully.
+          </p>
+          <div class="project-tags">
+            <span>JavaScript</span><span>React</span><span>REST API</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" title="View Code" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Chat Application</h3>
+          <p class="project-desc">
+            A real-time chat application with private and group messaging, 
+            user authentication, and message history.
+          </p>
+          <div class="project-tags">
+            <span>Python</span><span>Flask</span><span>Socket.IO</span>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-top">
+            <div class="project-icon"><i class="fas fa-folder-open"></i></div>
+            <div class="project-links">
+              <a href="#" title="View Code" aria-label="GitHub"><i class="fab fa-github"></i></a>
+              <a href="#" title="Live Demo" aria-label="Live Demo"><i class="fas fa-external-link-alt"></i></a>
+            </div>
+          </div>
+          <h3 class="project-title">Portfolio Website</h3>
+          <p class="project-desc">
+            This very portfolio website — crafted with pure HTML, CSS, and JavaScript 
+            with animations, responsive design, and smooth user experience.
+          </p>
+          <div class="project-tags">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section class="section education" id="education">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Academic Background</p>
+        <h2 class="section-title">My <span>Education</span></h2>
+      </div>
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-icon"><i class="fas fa-university"></i></div>
+              <div>
+                <h3>BSc in Computer Science</h3>
+                <p class="timeline-org">University of Gondar</p>
+              </div>
+            </div>
+            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2021 – Present</p>
+            <p class="timeline-desc">
+              Studying core computer science disciplines including Data Structures &amp; 
+              Algorithms, Software Engineering, Database Systems, Computer Networks, 
+              Operating Systems, and Artificial Intelligence.
+            </p>
+            <div class="timeline-tags">
+              <span>GPA: 3.5+</span>
+              <span>Active Member, CS Club</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-icon"><i class="fas fa-school"></i></div>
+              <div>
+                <h3>High School — Natural Science Stream</h3>
+                <p class="timeline-org">Ethiopia</p>
+              </div>
+            </div>
+            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> Completed 2021</p>
+            <p class="timeline-desc">
+              Completed the Ethiopian University Entrance Examination with strong results 
+              in Mathematics and Natural Sciences, qualifying for computer science studies.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-header">
+              <div class="timeline-icon"><i class="fas fa-certificate"></i></div>
+              <div>
+                <h3>Online Certifications</h3>
+                <p class="timeline-org">Various Platforms</p>
+              </div>
+            </div>
+            <p class="timeline-date"><i class="fas fa-calendar-alt"></i> 2022 – Present</p>
+            <p class="timeline-desc">
+              Continuously learning through platforms like Coursera, Udemy, and freeCodeCamp, 
+              earning certificates in Web Development, Python Programming, and Data Structures.
+            </p>
+            <div class="timeline-tags">
+              <span>freeCodeCamp</span>
+              <span>Coursera</span>
+              <span>Udemy</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-tag">Let's Connect</p>
+        <h2 class="section-title">Get In <span>Touch</span></h2>
+      </div>
+      <div class="contact-wrapper">
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm always open to discussing new projects, creative ideas, or opportunities 
+            to be part of something great. Feel free to reach out!
+          </p>
+          <ul class="contact-list">
+            <li>
+              <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:hailemariamad@example.com">hailemariamad@example.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <p class="contact-label">Location</p>
+                <p>Gondar, Amhara Region, Ethiopia</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fab fa-github"></i></div>
+              <div>
+                <p class="contact-label">GitHub</p>
+                <a href="https://github.com/HailemariamAdugnaw" target="_blank" rel="noopener">
+                  github.com/HailemariamAdugnaw
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+              <div>
+                <p class="contact-label">LinkedIn</p>
+                <a href="https://linkedin.com/in/hailemariam-adugnaw" target="_blank" rel="noopener">
+                  linkedin.com/in/hailemariam-adugnaw
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <p class="form-status" id="form-status"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-text">
+        Designed &amp; Built by <span>Hailemariam Adugnaw</span>
+      </p>
+      <p class="footer-sub">University of Gondar · Computer Science</p>
+      <div class="footer-socials">
+        <a href="https://github.com/HailemariamAdugnaw" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://linkedin.com/in/hailemariam-adugnaw" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:hailemariamad@example.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
