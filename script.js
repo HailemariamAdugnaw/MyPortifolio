@@ -89,7 +89,7 @@ typeLoop();
 const revealEls = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
-  entries.forEach((entry, i) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting) {
       // Stagger children in the same parent
       const delay = (entry.target.dataset.delay || 0);

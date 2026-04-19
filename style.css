@@ -587,7 +587,6 @@ img { display: block; max-width: 100%; }
 
 .skill-list { display: flex; flex-direction: column; gap: 16px; }
 
-.skill-item {}
 
 .skill-name {
   display: block;
